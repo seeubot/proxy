@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terabox Proxy Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Terabox Proxy Server</h1>
+    <p>This is a proxy server for handling Terabox downloads.</p>
+    
+    <div class="container">
+        <h2>API Usage</h2>
+        <p>To use this proxy, make a GET request to:</p>
+        <code>/api/proxy?url=https://terabox.com/your_file_link</code>
+        
+        <h3>Example:</h3>
+        <code>https://your-vercel-app.vercel.app/api/proxy?url=https://terabox.com/s/1abCDef2GhIjKl_123456</code>
+    </div>
+    
+    <div class="container">
+        <h2>Notes</h2>
+        <ul>
+            <li>Only Terabox URLs are allowed</li>
+            <li>Maximum response time: 60 seconds</li>
+            <li>Request will be forwarded with appropriate headers</li>
+        </ul>
+    </div>
+</body>
+</html>
